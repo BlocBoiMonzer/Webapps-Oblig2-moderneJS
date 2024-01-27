@@ -19,19 +19,24 @@ try {
 
   /// let (or const) ///
 
-  // (function UseLetOrConst() {
-  //   // Use let (or const) instead of var to make the function succeed.
-  //   var x = 1;
-  //   if (true) {
-  //     var x = 2;
-  //   }
+  (function UseLetOrConst() {
+    // Use let (or const) instead of var to make the function succeed.
+    let x = 1;
+    if (true) {
+      let x = 2;
+    }
+// Don't make changes below this line
 
-  //   // Don't make changes below this line
+    expect(x).toBe(1);
 
-  //   expect(x).toBe(1);
+    solved++;
+  })();
+    // Don't make changes below this line
 
-  //   solved++;
-  // })();
+    expect(x).toBe(1);
+
+    solved++;
+  })();
 
   /// Template strings ///
 
